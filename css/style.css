@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: pop; */
+}
+body
+{
+    display: flex;
+    height: 100hv;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffffff; */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.contenedor
+{
+    max-width: 700px;
+    width: 100%;
+    /* background: #f9f9f9; */
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.contenedor .titulo
+{
+    font-size: 25px;
+    font-weight: 500;     
+    position: relative; 
+}
+.contenedor .titulo::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #ffffff;
+}
+.contenedor form .user-detalles 
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 12px 0;
+    justify-content: space-between;
+}
+form .user-detalles .input-box
+{
+    margin-bottom: 15px;
+    
+    width: calc(100% /2 - 20px);
+}
+
+.user-detalles .input-box .detalles
+{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-detalles .input-box input 
+{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px; 
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-detalles .input-box input:focus,
+.user-detalles .input-box input:valid
+{
+    border-color: #ccc;
+
+}
